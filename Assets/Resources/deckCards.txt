@@ -1,0 +1,37 @@
+{
+        "0":{
+                "name":"Doble energia",
+                "pic":"double_energy.jpg",
+                "effect":[1,2,0,0,0,0,0,0,0]
+        },
+        "1":{
+                "name":"Energia lucha",
+                "pic":"fighting_energy.jpg",
+                "effect":[1,2,0,0,0,0,0,0,0]
+        },
+        "2":{
+                "name":"Energia fuego",
+                "pic":"fire_energy.jpg",
+                "effect":[1,2,0,0,0,0,0,0,0]
+        },
+        "3":{
+                "name":"Energia hoja",
+                "pic":"grass_energy.jpg",
+                "effect":[1,2,0,0,0,0,0,0,0]
+        },
+        "4":{
+                "name":"Energia electrica",
+                "pic":"lightning_energy.jpg",
+                "effect":[1,2,0,0,0,0,0,0,0]
+        },
+        "5":{
+                "name":"Energia psiquica",
+                "pic":"psychic_energy.jpg",
+                "effect":[1,2,0,0,0,0,0,0,0]
+        },
+        "6":{
+                "name":"Energia agua",
+                "pic":"water_energy.jpg",
+                "effect":[1,2,0,0,0,0,0,0,0]
+        }
+}
