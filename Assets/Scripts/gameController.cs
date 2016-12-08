@@ -13,9 +13,9 @@ public class gameController : MonoBehaviour {
 	void Update () {
 		switch (state)
 		{
-		    case 0:
+		case 0:
 			gameStart ();
-			//Inicio del juego
+			monedaController.throwCoin();
 			//saca 7 cartas cada uno
 			//sirven o las cambias
 			//moneda
