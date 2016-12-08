@@ -3,19 +3,17 @@ using System.Collections;
 
 public class monedaController : MonoBehaviour {
 
-	public Rigidbody rb;
-	public float force;
+	public static Rigidbody rb;
+	public static float force;
 	public float turnForce;
-	public int result;
-	public bool threw;
+	public static int result;
+	public static bool threw;
 	public float moving;
 
 	void Start () {
 		rb = GetComponent<Rigidbody>();
 		force = Random.Range(15.0f, 25.0f);
-		turnForce = Random.Range(230.0f, 280.0f);
-		threw = false;
-		result = -1;
+		turnForce = Random.Range(280.0f, 380.0f);
 	}
 
 	void Update () {
@@ -29,10 +27,6 @@ public class monedaController : MonoBehaviour {
 			//get result
 			result = getResult();
 		}
-	}
-    
-	void throwCoin() {
-		rb.AddForce(0, force, 0, ForceMode.Impulse);
 	}
 
 	int getResult() {
@@ -49,6 +43,12 @@ public class monedaController : MonoBehaviour {
 		}
 		return false;
 	}
+
+	public static void throwCoin() {
+		result = -1;
+		threw = false;
+		rb.AddForce(0, force, 0, ForceMode.Impulse);
+	}	
 
 	void OnMouseDown(){
 		throwCoin();
